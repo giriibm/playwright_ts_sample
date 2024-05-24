@@ -2,9 +2,9 @@
 
 This repository contains a sample test project using Playwright with TypeScript.
 
-## Check node and npm installed
+## Check NodeJS and NPM installed
 - `node -v`
-  - Check the node version 
+  - Check the nodejs version 
 
 - `npm -v`
   - Check the npm version 
