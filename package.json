@@ -1,0 +1,22 @@
+{
+  "name": "playwright_ts_sample",
+  "version": "1.0.0",
+  "description": "This is a playwright typescript sample test",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giriibm/playwright_ts_sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giriibm/playwright_ts_sample/issues"
+  },
+  "homepage": "https://github.com/giriibm/playwright_ts_sample#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.12.12"
+  }
+}
