@@ -51,4 +51,5 @@ npx playwright show-report
 
 For more information, visit the [Playwright documentation](https://playwright.dev/docs/intro).
 
-snapshot:
+![Playwright Template](/../playwright_ts_sample/blob/main/screenshots/playwright-ts-sample.png?raw=true "Playwright Template")
+
