@@ -50,3 +50,5 @@ npx playwright show-report
   - Playwright Test configuration.
 
 For more information, visit the [Playwright documentation](https://playwright.dev/docs/intro).
+
+snapshot:
