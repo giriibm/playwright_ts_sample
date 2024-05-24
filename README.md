@@ -9,6 +9,14 @@ This repository contains a sample test project using Playwright with TypeScript.
 - `npm -v`
   - Check the npm version 
 
+## Getting Started
+
+Installing Playwright
+
+```sh
+npm init playwright@latest
+```
+
 ## Available Commands
 
 Inside this directory, you can run several commands:
@@ -30,14 +38,6 @@ Inside this directory, you can run several commands:
 
 - `npx playwright codegen`
   - Auto-generates tests with Codegen.
-
-## Getting Started
-
-We suggest that you begin by running:
-
-```sh
-npx playwright test
-```
 
 ## HTML Report
 
