@@ -32,14 +32,20 @@ We suggest that you begin by running:
 npx playwright test
 ```
 
+## HTML Report
+
+To open last HTML report run:
+
+```sh
+npx playwright show-report
+```
+
+
 ## Key Files to Explore
 
-- `./tests/example.spec.ts`
+- `./src/tests/e2e/example.spec.ts`
   - Example end-to-end test.
-
-- `./tests-examples/demo-todo-app.spec.ts`
-  - Demo Todo App end-to-end tests.
-
+  
 - `./playwright.config.ts`
   - Playwright Test configuration.
 
