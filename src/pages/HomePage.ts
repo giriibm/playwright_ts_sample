@@ -12,8 +12,7 @@ export default class HomePage extends BasePage {
     readonly divServices: Locator;
     readonly divServicesArrow: Locator;
     readonly divPortfolio: Locator;
-    readonly divTeam: Locator;
-    readonly divResources: Locator;
+    readonly divBlog: Locator;    
     readonly divResourcesArrow: Locator;
     readonly divContactUs: Locator;
 
@@ -36,13 +35,12 @@ export default class HomePage extends BasePage {
 
         // Initialize locators
         this.header = this.page.locator('nav > * > header');
-        this.divHome = this.page.locator('header>*>*>div:nth-child(1)'); // Update selector as needed
-        this.divAboutUs = this.page.locator('header>*>*>div:nth-child(2)');
-        this.divServices = this.page.locator('header>*>*>div:nth-child(3)');
-        this.divPortfolio = this.page.locator('header>*>*>div:nth-child(4)');
-        this.divTeam = this.page.locator('header>*>*>div:nth-child(5)');
-        this.divResources = this.page.locator('header>*>*>div:nth-child(6)');
-        this.divContactUs = this.page.locator('header>*>*>div:nth-child(7)');
+        this.divHome = this.page.locator('header>div>nav>div:nth-child(1)'); // Update selector as needed
+        this.divAboutUs = this.page.locator('header>div>nav>div:nth-child(2)');
+        this.divServices = this.page.locator('header>div>nav>div:nth-child(3)');
+        this.divPortfolio = this.page.locator('header>div>nav>div:nth-child(4)');
+        this.divBlog = this.page.locator('header>div>nav>div:nth-child(5)');        
+        this.divContactUs = this.page.locator('header>div>nav>div:nth-child(6)');
 
         this.divServicesArrow = this.page.locator('header>*>nav>div:nth-child(3)>a');
         this.divResourcesArrow = this.page.locator('header>*>nav>div:nth-child(6)>a');
@@ -101,18 +99,12 @@ export default class HomePage extends BasePage {
     /**
      * Click on the Team navigation element
      */
-    async clickOnTeam(): Promise<void> {
-        await this.isVisible(this.divTeam);
-        await this.divTeam.click();
+    async clickOnBlog(): Promise<void> {
+        await this.isVisible(this.divBlog);
+        await this.divBlog.click();
     }
 
-    /**
-     * Click on the Resources navigation element
-     */
-    async clickOnResources(): Promise<void> {
-        await this.isVisible(this.divResources);
-        await this.divResources.click();
-    }
+
 
     /**
      * Click on the Contact Us navigation element

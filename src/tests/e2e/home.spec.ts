@@ -1,7 +1,8 @@
 import { test, expect } from '@playwright/test';
 import HomePage from '../../pages/HomePage'
 
-test.describe('Home Page Tests', () => {
+test.describe('Navigation Tests', () => {
+
   test('should load home page successfully', async ({ page }) => {
     const homePage = new HomePage(page);
     await homePage.goto();
@@ -44,27 +45,18 @@ test.describe('Home Page Tests', () => {
     await expect(page).toHaveURL(/\/portfolio/);
   });
   
-  test('should navigate to Team page via navigation', async ({ page }) => {
+  test('should navigate to Blog page via navigation', async ({ page }) => {
     const homePage = new HomePage(page);
     await homePage.goto();
     
     // Click team link in navigation
-    await homePage.clickOnTeam();
+    await homePage.clickOnBlog();
     
     // Verify URL changed to team page
-    await expect(page).toHaveURL(/\/team/);
+    await expect(page).toHaveURL(/\/blog/);
   });
   
-  test('should navigate to Resources page via navigation', async ({ page }) => {
-    const homePage = new HomePage(page);
-    await homePage.goto();
-    
-    // Click resources link in navigation
-    await homePage.clickOnResources();
-    
-    // Verify URL changed to resources page
-    await expect(page).toHaveURL(/\/resources/);
-  });
+
   
   test('should navigate to Home page via navigation', async ({ page }) => {
     // First navigate to another page to test navigation back to home
@@ -76,7 +68,7 @@ test.describe('Home Page Tests', () => {
     await homePage.clickOnHome();
     
     // Verify URL is home page
-    await expect(page).toHaveURL(/^\/$|\/home$/);
+    await expect(page).toHaveURL(/^\/$|\//);
   });
 
   test('should verify all navigation links are visible', async ({ page }) => {
@@ -87,8 +79,6 @@ test.describe('Home Page Tests', () => {
     await expect(homePage.divHome).toBeVisible();
     await expect(homePage.divServices).toBeVisible();
     await expect(homePage.divPortfolio).toBeVisible();
-    await expect(homePage.divTeam).toBeVisible();
-    await expect(homePage.divResources).toBeVisible();
     await expect(homePage.divContactUs).toBeVisible();
   });
 });

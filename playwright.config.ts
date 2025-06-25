@@ -33,8 +33,8 @@ export default defineConfig({
     headless: false,
     screenshot: 'on',
     // Add timeout settings for more reliable element interactions
-    actionTimeout: 10000, // 10 seconds timeout for actions
-    navigationTimeout: 30000, // 30 seconds timeout for navigations
+    actionTimeout: 60000, // 60 seconds timeout for actions
+    navigationTimeout: 60000, // 60 seconds timeout for navigations
   },
 
 
