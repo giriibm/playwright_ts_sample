@@ -23,20 +23,20 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    
+
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'http://localhost:3000/',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
-    video: 'on',    
-    headless:false,
+    video: 'on',
+    headless: false,
     screenshot: 'on',
     // Add timeout settings for more reliable element interactions
     actionTimeout: 10000, // 10 seconds timeout for actions
     navigationTimeout: 30000, // 30 seconds timeout for navigations
   },
-  
+
 
 
   /* Configure projects for major browsers */
