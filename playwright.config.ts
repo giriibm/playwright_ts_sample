@@ -32,7 +32,12 @@ export default defineConfig({
     video: 'on',    
     headless:false,
     screenshot: 'on',
+    // Add timeout settings for more reliable element interactions
+    actionTimeout: 10000, // 10 seconds timeout for actions
+    navigationTimeout: 30000, // 30 seconds timeout for navigations
   },
+  
+
 
   /* Configure projects for major browsers */
   projects: [

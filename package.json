@@ -16,7 +16,9 @@
   },
   "homepage": "https://github.com/giriibm/playwright_ts_sample#readme",
   "devDependencies": {
-    "@playwright/test": "^1.44.1",
-    "@types/node": "^20.12.12"
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^20.12.12",
+    "playwright": "^1.53.1",
+    "playwright-core": "^1.53.1"
   }
 }
