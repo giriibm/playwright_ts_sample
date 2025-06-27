@@ -24,6 +24,9 @@ Inside this directory, you can run several commands:
 - `npx playwright test`
   - Runs the end-to-end tests.
 
+- `npx playwright test --workers=1`
+  - Runs the end-to-end tests in in 1 worker mode.
+
 - `npx playwright test --ui`
   - Starts the interactive UI mode.
 
